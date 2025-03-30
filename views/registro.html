@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Usuario - Proyecto Cuentacuentos</title>
+    <link rel="stylesheet" href="../css/styles.css"> 
+
+</head>
+<body>
+    <header>
+        <h1>Registro de Usuario</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.php">Inicio</a></li>
+                <li><a href="../views/login.php">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="registro">
+            <h2>¡Registrate!</h2>
+            <form action="../php/registro_usuario.php" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+                
+                <div id="mensaje" style="display: none;"></div>
+
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Proyecto Cuentacuentos.</p>
+    </footer>
+
+    <script src="../js/validacion_usuario.js"></script>
+</body>
+</html>

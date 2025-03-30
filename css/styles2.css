@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    flex-direction: row;
+} 
+
+#listado-cuentos {
+    width: 25%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-right: 1px, solid #ccc;
+}
+
+#listado-cuentos ul { 
+    list-style: none;
+    padding: 0;
+}
+
+#listado-cuentos li {
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px 0;
+    background-color: #eaeaea;
+    border-radius: 5px;
+}
+
+#listado-cuentos li:hover {
+    background-color: #dcdcdc;
+}
+
+#contenido-cuento {
+    width: 75%;
+    padding: 20px;
+}
+
+#marco-cuento {
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+#continuar-cuento {
+    margin-top: 10px;
+}
+
